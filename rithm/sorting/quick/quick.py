@@ -9,6 +9,15 @@ The sub-arrays are then sorted recursively. This implementation includes both
 an inplace sorting method and a non-inplace sorting method that returns a new
 sorted list.
 
+Time Complexity:
+- Best Case: O(n log n)
+- Average Case: O(n log n)
+- Worst Case: O(n^2) (when the smallest or largest element is always chosen as pivot)
+
+Space Complexity:
+- O(log n) for the recursive stack space in the inplace version
+- O(n) for the non-inplace version due to the creation of new lists
+
 Example:
 
 arr = [11, 9, 12, 7, 3]
@@ -89,6 +98,25 @@ class QuickSort(object):
             )
 
     def partition(self, low: int, high: int, debug=False) -> int:
+        """
+        This is the core method for inplace quick sort.
+        It partitions the array into two halves based on the pivot element.
+        Elements less than or equal to the pivot are moved to the left,
+        and elements greater than the pivot are moved to the right.
+
+        This uses Lomuto partition scheme, which is a common approach in quick
+        sort that tracks the index as it moves the elements to the left.
+
+        Hoare's partition scheme is another approach that is more efficient
+        but is more complex to implement. This would use two pointers from
+        either end of the array and swap elements until they meet in the middle.
+
+        :param low: The starting index of the array to partition.
+        :param high: The ending index of the array to partition.
+        :param debug: If True, prints debug information during partitioning.
+
+        :return: The index of the pivot element after partitioning.
+        """
         # Start with the last element as the pivot and move all elements
         # less than or equal to the pivot to the left of it
         pivot = self.array[high]
