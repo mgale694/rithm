@@ -27,6 +27,8 @@ Essentially, it's a creative spelling choice designed to be memorable and to sub
 
 - **Sorting Algorithms**
   - Quick Sort
+  - Bubble Sort
+  - Merge Sort
 
 <!-- - **Sorting Algorithms:**
   - Bubble Sort
