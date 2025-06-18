@@ -23,6 +23,28 @@ step 6: choose 7 as pivot
 step 7: [3, 7, 9, 11, 12] # Move elements less than 7 to the left
 
 return [3, 7, 9, 11, 12]
+
+When you do quick sort inplace the concept of pivot is a bit misleading. This
+is because when you non-inplace, you literally sort array either side of the
+pivot then glue it back together (lower, pivot, higher).
+
+However, when you choose a pivot, then you move all less than or equal elements
+to the left, then glue back on the pivot just after the less than elements (as
+you track the index that you are at). Then you do the same to left and right of
+the final pivot index.
+
+[3, 7, 2, 1, 5] with pivot 5
+3 replaces 3
+2 replaces 7
+1 replaces 7
+thats 3 operations so index will be 2 (start at -1)
+so 5 goes into index 3
+[3, 2, 1, 5, 7]
+now we do the same on [3, 2, 1] and [7] (which is already sorted)
+so we choose 1 as pivot
+none are less than or equal so 0 operations
+so 1 goes into index 0
+[1, 2, 3, 5, 7] -> sorted
 """
 
 
@@ -152,8 +174,8 @@ class QuickSort(object):
 if __name__ == "__main__":
     array = [3, 6, 8, 10, 1, 2, 1]
     quick_sort = QuickSort(array)
-    # sorted_array = quick_sort.non_inplace_sort(debug=True)
-    # print("Sorted array (non-inplace):", sorted_array)
+    sorted_array = quick_sort.non_inplace_sort(debug=True)
+    print("Sorted array (non-inplace):", sorted_array)
     # For inplace sorting, you can use:
-    quick_sort.inplace_sort(0, len(array) - 1, debug=True)
-    print("Sorted array (inplace):", quick_sort.array)
+    # quick_sort.inplace_sort(0, len(array) - 1, debug=True)
+    # print("Sorted array (inplace):", quick_sort.array)
