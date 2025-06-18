@@ -8,16 +8,7 @@ A Python toolkit for mastering and exploring essential algorithms with clarity a
 
 `rithm` is crafted to be an insightful toolkit for navigating and mastering algorithmic challenges. Just as a rithm guides the sequence and progression of movement, this library provides clear, optimized implementations of essential algorithms, enabling developers to discover elegant solutions and build efficient, high-performance systems with confidence.
 
-### Why "rithm"?
-
-The spelling "rithm" is a deliberate simplification of the word "rhythm":
-
-- **Stripped-Down:** "Rhythm" is famously one of the hardest words to spell in English. By removing the "y" and the first "h," "rithm" becomes a simpler, more direct representation of the concept. This mirrors the goal of algorithms: to simplify complex problems into clear, executable steps.
-- **Focus on Core Concept:** It keeps the core "rhythm" sound and meaning, but without the baggage of complex English orthography.
-- **Unique Project Name:** It's unlikely to be taken as a GitHub repository name, and it stands out.
-- **Playful & Modern:** It gives the project a slightly modern, tech-y, and self-aware feel, acknowledging the often-complex nature of algorithms while aiming for clarity.
-
-Essentially, it's a creative spelling choice designed to be memorable and to subtly reflect the project's aim of clarifying and optimizing algorithmic principles.
+"Rhythm" is famously one of the hardest words to spell in English. By removing the "y" and the first "h," "rithm" becomes a simpler, more direct representation of the concept. This mirrors the goal of algorithms: to simplify complex problems into clear, executable steps.
 
 ---
 
