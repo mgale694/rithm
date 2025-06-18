@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rithm"
+version = "0.1.0"
+description = "Efficient and robust implementations of advanced algorithms for Python."
+authors = [{ name = "Matthew Gale", email = "mgale694l@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mgale694/rithm"
+Issues = "https://github.com/mgale694/rithm/issues"
+
+[tool.setuptools.packages.find]
+where = ["rithm"]
