@@ -20,6 +20,7 @@ A Python toolkit for mastering and exploring essential algorithms with clarity a
   - Quick Sort
   - Bubble Sort
   - Merge Sort
+  - Selection Sort
 
 <!-- - **Sorting Algorithms:**
   - Bubble Sort
