@@ -37,22 +37,6 @@ class BubbleSort(object):
     def __init__(self, array: list) -> None:
         self.array: list = array
 
-    # def sort(self) -> list:
-    #     n = len(self.arr)
-    #     for i in range(n):
-    #         # Track if a swap was made
-    #         swapped = False
-    #         for j in range(0, n-i-1):
-    #             # Compare adjacent elements
-    #             if self.arr[j] > self.arr[j+1]:
-    #                 # Swap if they are in the wrong order
-    #                 self.arr[j], self.arr[j+1] = self.arr[j+1], self.arr[j]
-    #                 swapped = True
-    #         # If no two elements were swapped, the array is sorted
-    #         if not swapped:
-    #             break
-    #     return self.arr
-
     def sort(self, debug: bool = False) -> None:
         """
         Sorts the array using the bubble sort algorithm.
